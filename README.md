@@ -758,6 +758,3 @@ This project has a comprehensive roadmap for future development. See **[FUTURE-E
 4. Use TypeScript strict mode for frontend code
 5. Follow REST API naming conventions for new endpoints
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
