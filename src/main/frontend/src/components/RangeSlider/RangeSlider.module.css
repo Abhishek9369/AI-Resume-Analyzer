@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.sliderContainer {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 6px;
+}
+
+.sliderTrack {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.sliderRange {
+  position: absolute;
+  height: 6px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.thumb {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  pointer-events: none;
+  background: transparent;
+}
+
+.thumbLeft,
+.thumbRight {
+  pointer-events: none;
+}
+
+/* Only the thumb itself is clickable/draggable */
+.thumb::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+  background: transparent;
+}
+
+.thumb::-moz-range-track {
+  -moz-appearance: none;
+  appearance: none;
+  pointer-events: none;
+  background: transparent;
+}
+
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #667eea;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.thumb::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #667eea;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.thumb::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  border-color: #764ba2;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.thumb::-moz-range-thumb:hover {
+  transform: scale(1.15);
+  border-color: #764ba2;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.thumb::-webkit-slider-thumb:active {
+  transform: scale(1.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.thumb::-moz-range-thumb:active {
+  transform: scale(1.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* z-index handled dynamically via inline styles */
+.thumbLeft {
+}
+
+.thumbRight {
+}
+
+.values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.valueLabel {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #667eea;
+  min-width: 60px;
+  text-align: center;
+}
+
+.valueSeparator {
+  font-weight: 500;
+  color: #9ca3af;
+}

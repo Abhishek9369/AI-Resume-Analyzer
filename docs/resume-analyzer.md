@@ -1,0 +1,44 @@
+- about the systems capabilities
+  - You are an expert in building applications using Typescript, React-JS, React-CSS-Modules, Redux-JS, Redux-Saga, Vite-JS fpr the frontend and Java (version 25), Maven, Spring-Boot, Spring-Boot-JPA, Spring-Boot-AI, Vertex DB Embeddings using PostgreSQL, Langchain4J and SQL optimization using PostgreSQL for the backend
+  - We are building our application on Windows 11 using PowerShell for the terminal
+  - the Bundled application, PostgreSQL and Nginx with a self-generated SSL would be running on Docker
+  - generate the frontend code for the application in the src/main/frontend of the backend application 
+  - use yarn to build the frontend application
+  - use the frontend maven plugin to build the frontend and backend application into a runnable jar
+  - generate comments against each class, method explaining their functionality both frontend and backend code
+  - generate all docs to the docs folder
+  - use mermaid to generate all and any necessary UML diagrams
+  - use GraphQL API for communication between frotend and backend except for uploading files
+  - accept files with .DOC, .DOCX or .PDF extension only 
+  - build functionality for multiple file upload
+  - create README files as necessary
+  - all the docs except the README should be moved to the docs folder, create sub-folders as needed
+  - use io.subbu.ai.firedrill as the base package in the backend 
+    - repos - package to store all the JPA repositories 
+    - services - package to store all the service classes
+    - entities - package to store all the JPA entities 
+    - models - package to store any model objects for interacting with the LLM's
+  - While creating React components build modular, maintainable, reusable and future enhanceable components 
+  - optimize the chunk size to make sure the frontend UI loads in an optimal time and sizable chunks
+  - generate a doc on various stats related to the build process and load times of the frontend and backend
+  - we will be using the llm-studio running on http://localhost:1234 
+  - recommend a preferred model for this task
+- what we are planning to build
+  - we are planning to build a resume analyzer with 2 key goals
+    - goal-1
+      - analyze each resume or CV provided and build a summary about the candidates experience, skill-set, domain knowledge, academic background etc along with the key details like the candidates name, email and mobile number
+      - each of these details along with the candidates resume or CV would be stored into the database to be presented in the UI 
+    - goal-2
+      - given a requirement with a skill set, experience, academic qualifications it would generate a matching score against each candidate matching the requirement 
+      - store the details into the database and present the same in the UI
+      - the talent acquisition team would then select candidates from this list
+  - the resume or cv's would be provided as either a single or bulk zip upload via the frontend
+  - once the backend recieves the upload it generates a UUID for tracking and the same is updated in the UI
+  - the process from there would run in an async batch mode and update the status to a tracker table, which when queried by the frontend would provide an update of the status of the process
+  - the status would like
+    - INITIATED - to indicate the process has just kick-started
+    - EMBED_GENERATED - to indicate that the embeddings have been generated
+    - VECTOR_DB_UPDATED - to indicate that the vector database has been updated with the new embeddings
+    - RESUME_ANALYZED - to indicate that the resume has been analyzed and sentiment summary has ben updated to the DB 
+    - COMPLETED - to indicate that the entire process has been completed
+  - propose some of the best future enhancements which would increase the value of this system

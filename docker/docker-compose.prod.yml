@@ -1,0 +1,166 @@
+version: '3.8'
+
+# Production Docker Compose configuration for Resume Analyzer
+# Usage: docker-compose -f docker-compose.prod.yml up -d
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg15
+    container_name: resume-analyzer-db-prod
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME:-resume_analyzer}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=en_US.UTF-8"
+      # Performance tuning
+      POSTGRES_SHARED_BUFFERS: 256MB
+      POSTGRES_EFFECTIVE_CACHE_SIZE: 1GB
+      POSTGRES_MAINTENANCE_WORK_MEM: 128MB
+      POSTGRES_CHECKPOINT_COMPLETION_TARGET: 0.9
+      POSTGRES_WAL_BUFFERS: 16MB
+      POSTGRES_DEFAULT_STATISTICS_TARGET: 100
+      POSTGRES_RANDOM_PAGE_COST: 1.1
+      POSTGRES_EFFECTIVE_IO_CONCURRENCY: 200
+    ports:
+      - "127.0.0.1:5432:5432"  # Only expose on localhost
+    volumes:
+      - postgres_data_prod:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+      - ./backups:/backups
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - resume-analyzer-network
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+
+  app:
+    image: resume-analyzer:${APP_VERSION:-latest}
+    container_name: resume-analyzer-app-prod
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Database Configuration
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${DB_NAME:-resume_analyzer}
+      SPRING_DATASOURCE_USERNAME: ${DB_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD}
+      SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE: 20
+      SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE: 5
+      SPRING_DATASOURCE_HIKARI_CONNECTION_TIMEOUT: 30000
+      
+      # LLM Studio Configuration (Production LLM endpoint)
+      LLM_STUDIO_BASE_URL: ${LLM_STUDIO_BASE_URL}
+      LLM_STUDIO_API_KEY: ${LLM_STUDIO_API_KEY}
+      LLM_STUDIO_MODEL: ${LLM_STUDIO_MODEL:-mistralai/mistral-7b-instruct-v0.3}
+      LLM_STUDIO_EMBEDDING_MODEL: ${LLM_STUDIO_EMBEDDING_MODEL:-text-embedding-nomic-embed-text-v1.5}
+      
+      # Application Configuration
+      SPRING_PROFILES_ACTIVE: production
+      SERVER_PORT: 8080
+      LOGGING_LEVEL_ROOT: INFO
+      LOGGING_LEVEL_IO_SUBBU_AI_FIREDRILL: INFO
+      
+      # Security
+      SERVER_ERROR_INCLUDE_MESSAGE: never
+      SERVER_ERROR_INCLUDE_STACKTRACE: never
+      
+      # File Upload
+      UPLOAD_DIR: /app/uploads
+      SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE: 50MB
+      SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE: 100MB
+      
+      # JVM Options for Production
+      JAVA_OPTS: >-
+        -Xmx2g 
+        -Xms1g 
+        -XX:+UseG1GC 
+        -XX:MaxGCPauseMillis=200 
+        -XX:+UseContainerSupport 
+        -XX:MaxRAMPercentage=75.0
+        -XX:+HeapDumpOnOutOfMemoryError
+        -XX:HeapDumpPath=/app/logs
+        -Djava.security.egd=file:/dev/./urandom
+    ports:
+      - "127.0.0.1:8080:8080"  # Only expose on localhost (nginx will proxy)
+    volumes:
+      - app_uploads_prod:/app/uploads
+      - app_logs_prod:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+    networks:
+      - resume-analyzer-network
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 3G
+        reservations:
+          cpus: '1'
+          memory: 2G
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  nginx:
+    image: nginx:alpine
+    container_name: resume-analyzer-nginx-prod
+    restart: always
+    depends_on:
+      app:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - nginx_logs:/var/log/nginx
+    networks:
+      - resume-analyzer-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  resume-analyzer-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+
+volumes:
+  postgres_data_prod:
+    driver: local
+  app_uploads_prod:
+    driver: local
+  app_logs_prod:
+    driver: local
+  nginx_logs:
+    driver: local

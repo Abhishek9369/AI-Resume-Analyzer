@@ -1,0 +1,73 @@
+ALEX KUMAR
+DevOps Engineer
+Email: alex.kumar@email.com | Phone: (555) 456-7890 | Location: Seattle, WA
+LinkedIn: linkedin.com/in/alexkumar | GitHub: github.com/alexkumar
+
+PROFESSIONAL SUMMARY
+Results-driven DevOps Engineer with 6 years of experience in designing, implementing, and maintaining CI/CD pipelines and cloud infrastructure. Expert in AWS, Terraform, Kubernetes, and automation. Passionate about improving developer productivity and system reliability through infrastructure as code and automation.
+
+TECHNICAL SKILLS
+- Cloud Platforms: AWS (EC2, S3, ECS, EKS, Lambda, CloudFormation), Azure, GCP
+- Infrastructure as Code: Terraform, CloudFormation, Ansible
+- Container Technologies: Docker, Kubernetes, ECS, EKS
+- CI/CD: Jenkins, GitLab CI, GitHub Actions, CircleCI
+- Scripting: Python, Bash, PowerShell
+- Monitoring: Prometheus, Grafana, CloudWatch, ELK Stack
+- Version Control: Git, GitHub, GitLab, Bitbucket
+- Configuration Management: Ansible, Chef
+- Networking: VPC, Load Balancers, Security Groups, Route53
+
+PROFESSIONAL EXPERIENCE
+
+Senior DevOps Engineer | CloudTech Inc | Seattle, WA | Apr 2021 - Present
+- Designed and implemented AWS infrastructure using Terraform for multiple microservices
+- Built and maintained Kubernetes clusters (EKS) serving 100+ microservices
+- Implemented CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time by 70%
+- Set up monitoring and alerting using Prometheus and Grafana
+- Reduced infrastructure costs by 35% through optimization and auto-scaling
+- Implemented disaster recovery and backup strategies
+- Led migration from EC2 to containerized architecture on Kubernetes
+
+DevOps Engineer | Tech Innovations | Seattle, WA | Jun 2019 - Mar 2021
+- Managed AWS infrastructure for production and staging environments
+- Created Docker containers and orchestrated with Kubernetes
+- Implemented Infrastructure as Code using Terraform
+- Set up centralized logging with ELK Stack
+- Automated deployment processes reducing manual effort by 80%
+- Collaborated with development teams to optimize application performance
+
+Junior DevOps Engineer | StartupCloud | Portland, OR | Aug 2017 - May 2019
+- Maintained and monitored AWS infrastructure
+- Created and maintained CI/CD pipelines using Jenkins
+- Wrote automation scripts in Python and Bash
+- Implemented configuration management using Ansible
+- Provided on-call support for production systems
+
+EDUCATION
+Bachelor of Engineering in Computer Science | University of Washington | 2013 - 2017
+GPA: 3.6/4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Professional
+- AWS Certified DevOps Engineer - Professional
+- Certified Kubernetes Administrator (CKA)
+- HashiCorp Certified: Terraform Associate
+- Linux Foundation Certified System Administrator
+
+PROJECTS
+Automated Infrastructure Platform
+- Built fully automated infrastructure provisioning using Terraform and Ansible
+- Technologies: AWS, Terraform, Ansible, Python
+
+Kubernetes Monitoring Stack
+- Implemented complete monitoring solution for Kubernetes clusters
+- Technologies: Prometheus, Grafana, AlertManager, ELK Stack
+
+Multi-Region Disaster Recovery
+- Designed and implemented DR solution across multiple AWS regions
+- Technologies: AWS, Terraform, Lambda, Route53
+
+ACHIEVEMENTS
+- Reduced deployment failures by 90% through improved CI/CD practices
+- Saved $200K annually through infrastructure optimization
+- Improved system uptime from 95% to 99.9%

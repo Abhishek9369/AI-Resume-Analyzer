@@ -1,0 +1,65 @@
+JANE SMITH
+Full Stack Developer
+Email: jane.smith@email.com | Phone: (555) 987-6543 | Location: Austin, TX
+Portfolio: janesmith.dev | GitHub: github.com/janesmith
+
+PROFESSIONAL SUMMARY
+Creative and detail-oriented Full Stack Developer with 5 years of experience building modern web applications using React, Node.js, and TypeScript. Expertise in frontend development, responsive design, and backend API development. Strong problem-solving skills and passion for creating exceptional user experiences.
+
+TECHNICAL SKILLS
+- Frontend: React, Redux, TypeScript, JavaScript (ES6+), HTML5, CSS3, SASS
+- Backend: Node.js, Express.js, NestJS, GraphQL, REST APIs
+- Databases: PostgreSQL, MongoDB, MySQL
+- State Management: Redux, Redux Toolkit, Context API
+- Testing: Jest, React Testing Library, Cypress, Playwright
+- Version Control: Git, GitHub, GitLab
+- CI/CD: GitHub Actions, CircleCI
+- Cloud: AWS, Vercel, Netlify
+- Tools: VS Code, Webpack, Vite, npm, yarn
+
+PROFESSIONAL EXPERIENCE
+
+Senior Full Stack Developer | WebSolutions Co | Austin, TX | Mar 2021 - Present
+- Developed and maintained full-stack applications using React and Node.js
+- Built responsive, accessible user interfaces following modern design principles
+- Implemented GraphQL APIs reducing data transfer by 30%
+- Migrated legacy jQuery application to React, improving performance by 50%
+- Collaborated with UX designers to implement pixel-perfect designs
+- Conducted code reviews and mentored junior developers
+
+Full Stack Developer | Digital Agency | Remote | Jan 2019 - Feb 2021
+- Created dynamic web applications using React and Express.js
+- Developed RESTful APIs with Node.js and integrated with PostgreSQL
+- Implemented state management using Redux and Redux Toolkit
+- Wrote comprehensive unit and integration tests using Jest
+- Optimized application performance achieving 90+ Lighthouse scores
+- Participated in agile ceremonies and sprint planning
+
+Frontend Developer | Creative Studios | Austin, TX | Jun 2018 - Dec 2018
+- Built responsive websites using React and modern CSS
+- Collaborated with designers to implement UI/UX designs
+- Ensured cross-browser compatibility and mobile responsiveness
+- Improved website loading time by 40% through optimization
+
+EDUCATION
+Bachelor of Science in Computer Science | University of Texas at Austin | 2014 - 2018
+GPA: 3.8/4.0
+
+CERTIFICATIONS
+- AWS Certified Developer - Associate
+- Meta Frontend Developer Professional Certificate
+
+PROJECTS
+Task Management Platform
+- Full-stack application with React, Node.js, PostgreSQL, and GraphQL
+- Features: Real-time updates, drag-and-drop, collaborative editing
+- Deployed on AWS with CI/CD pipeline
+
+Social Media Dashboard
+- Analytics dashboard built with React, TypeScript, and D3.js
+- Real-time data visualization and reporting
+
+ACHIEVEMENTS
+- Increased application performance by 50% through code optimization
+- Reduced bug count by 60% through comprehensive testing strategy
+- Led migration of 3 legacy applications to modern tech stack

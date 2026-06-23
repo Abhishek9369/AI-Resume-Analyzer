@@ -1,0 +1,47 @@
+[
+  {
+    "username": "admin@company.com",
+    "password": "Admin@123",
+    "firstName": "System",
+    "lastName": "Administrator",
+    "email": "admin@company.com",
+    "roles": ["ADMIN"],
+    "description": "Full system access with all permissions"
+  },
+  {
+    "username": "recruiter@company.com",
+    "password": "Recruiter@123",
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "email": "recruiter@company.com",
+    "roles": ["RECRUITER"],
+    "description": "Can manage job requirements and candidates"
+  },
+  {
+    "username": "hiring.manager@company.com",
+    "password": "Manager@123",
+    "firstName": "Michael",
+    "lastName": "Chen",
+    "email": "hiring.manager@company.com",
+    "roles": ["HIRING_MANAGER"],
+    "description": "Can review candidates and provide feedback"
+  },
+  {
+    "username": "hr@company.com",
+    "password": "HR@123",
+    "firstName": "Jennifer",
+    "lastName": "Williams",
+    "email": "hr@company.com",
+    "roles": ["EMPLOYEE"],
+    "description": "Can manage employee information"
+  },
+  {
+    "username": "interviewer@company.com",
+    "password": "Interview@123",
+    "firstName": "David",
+    "lastName": "Martinez",
+    "email": "interviewer@company.com",
+    "roles": ["INTERVIEWER"],
+    "description": "Can conduct interviews and provide feedback"
+  }
+]

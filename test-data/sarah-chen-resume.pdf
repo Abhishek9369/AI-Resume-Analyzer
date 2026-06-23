@@ -1,0 +1,154 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources << /Font << /F1 5 0 R >> >>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2850
+>>
+stream
+BT
+/F1 18 Tf
+50 720 Td
+(SARAH CHEN) Tj
+0 -20 Td
+/F1 14 Tf
+(Senior Full Stack Engineer) Tj
+0 -30 Td
+/F1 10 Tf
+(Email: sarah.chen@email.com) Tj
+0 -15 Td
+(Phone: +1 \(555\) 123-4567) Tj
+0 -15 Td
+(Location: San Francisco, CA) Tj
+0 -30 Td
+/F1 12 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -20 Td
+/F1 10 Tf
+(Experienced Full Stack Engineer with 8+ years of expertise in) Tj
+0 -15 Td
+(building scalable web applications and microservices.) Tj
+0 -15 Td
+(Strong background in Java, Spring Boot, React, and cloud.) Tj
+0 -30 Td
+/F1 12 Tf
+(TECHNICAL SKILLS) Tj
+0 -20 Td
+/F1 10 Tf
+(Programming: Java, JavaScript, TypeScript, Python, SQL) Tj
+0 -15 Td
+(Frameworks: Spring Boot, Spring Cloud, React, Redux, Node.js) Tj
+0 -15 Td
+(Databases: PostgreSQL, MySQL, MongoDB, Redis) Tj
+0 -15 Td
+(Cloud: AWS, Azure, Docker, Kubernetes, Terraform) Tj
+0 -15 Td
+(Tools: Git, Jenkins, GitLab CI/CD, Maven, Gradle) Tj
+0 -30 Td
+/F1 12 Tf
+(EXPERIENCE) Tj
+0 -20 Td
+/F1 11 Tf
+(Senior Full Stack Engineer) Tj
+0 -15 Td
+/F1 10 Tf
+(TechCorp Solutions | March 2021 - Present) Tj
+0 -15 Td
+(- Lead development of enterprise resume analysis platform) Tj
+0 -12 Td
+(- Architected microservices using Spring Boot and PostgreSQL) Tj
+0 -12 Td
+(- Built responsive React frontend with Redux and GraphQL) Tj
+0 -12 Td
+(- Implemented job matching using vector embeddings) Tj
+0 -12 Td
+(- Reduced API response time by 60% through optimization) Tj
+0 -25 Td
+/F1 11 Tf
+(Full Stack Engineer) Tj
+0 -15 Td
+/F1 10 Tf
+(DataFlow Inc. | June 2018 - February 2021) Tj
+0 -15 Td
+(- Developed RESTful APIs serving 100K+ daily requests) Tj
+0 -12 Td
+(- Built real-time dashboard using React and WebSocket) Tj
+0 -12 Td
+(- Implemented OAuth2/JWT authentication system) Tj
+0 -12 Td
+(- Migrated legacy monolith to microservices architecture) Tj
+0 -25 Td
+/F1 11 Tf
+(Software Engineer) Tj
+0 -15 Td
+/F1 10 Tf
+(StartupHub | July 2016 - May 2018) Tj
+0 -15 Td
+(- Developed full-stack features for SaaS platform) Tj
+0 -12 Td
+(- Built batch processing system handling 1M+ records/hour) Tj
+0 -12 Td
+(- Implemented logging and monitoring using ELK stack) Tj
+0 -30 Td
+/F1 12 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F1 10 Tf
+(Master of Science in Computer Science) Tj
+0 -15 Td
+(Stanford University | 2016 | GPA: 3.8/4.0) Tj
+0 -20 Td
+(Bachelor of Science in Computer Engineering) Tj
+0 -15 Td
+(UC Berkeley | 2014 | GPA: 3.7/4.0) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000260 00000 n 
+0000003160 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+3248
+%%EOF

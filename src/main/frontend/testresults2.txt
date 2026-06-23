@@ -1,0 +1,1057 @@
+yarn run v1.22.22
+warning package.json: No license field
+$ vitest --run
+
+[7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90mC:/Users/subbu/Code/resume-analyzer/src/main/frontend[39m
+
+ [32mΓ£ô[39m src/store/slices/candidatesSlice.test.ts [2m ([22m[2m8 tests[22m[2m)[22m[90m 6[2mms[22m[39m
+ [32mΓ£ô[39m src/store/slices/matchesSlice.test.ts [2m ([22m[2m10 tests[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32mΓ£ô[39m src/store/slices/uploadSlice.test.ts [2m ([22m[2m11 tests[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32mΓ£ô[39m src/store/slices/jobsSlice.test.ts [2m ([22m[2m10 tests[22m[2m)[22m[90m 7[2mms[22m[39m
+ [32mΓ£ô[39m src/services/graphql.test.ts [2m ([22m[2m8 tests[22m[2m)[22m[90m 203[2mms[22m[39m
+ [32mΓ£ô[39m src/services/api.test.ts [2m ([22m[2m7 tests[22m[2m)[22m[90m 229[2mms[22m[39m
+ [32mΓ£ô[39m src/pages/Dashboard/Dashboard.test.tsx [2m ([22m[2m5 tests[22m[2m)[22m[90m 105[2mms[22m[39m
+stderr | src/pages/Dashboard/Dashboard.test.tsx > Dashboard Component > should render dashboard title
+ΓÜá∩╕Å React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+ΓÜá∩╕Å React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ [33mΓ¥»[39m src/pages/CandidateList/CandidateList.test.tsx [2m ([22m[2m7 tests[22m [2m|[22m [31m5 failed[39m[2m)[22m[90m 167[2mms[22m[39m
+[31m   [33mΓ¥»[31m src/pages/CandidateList/CandidateList.test.tsx[2m > [22mCandidateList Component[2m > [22mshould display candidates when loaded[39m
+[31m     ΓåÆ Unable to find an element with the text: /John Doe/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_candidateList_528603"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_528603"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mCandidates ([0m
+          [0m2[0m
+          [0m)[0m
+        [36m</h2>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_searchBar_528603"[31m
+      [36m>[31m
+        [36m<select[31m
+          [33maria-label[31m=[32m"Search type selector"[31m
+          [33mclass[31m=[32m"_searchSelect_528603"[31m
+        [36m>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"all"[31m
+          [36m>[31m
+            [0mAll Candidates[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"name"[31m
+          [36m>[31m
+            [0mSearch by Name[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"skill"[31m
+          [36m>[31m
+            [0mSearch by Skill[0m
+          [36m</option>[31m
+        [36m</select>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_searchButton_528603"[31m
+          [33mdisabled[31m=[32m""[31m
+        [36m>[31m
+          [0mSearching...[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_528603"[31m
+      [36m>[31m
+        [0mLoading candidates...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/CandidateList/CandidateList.test.tsx[2m > [22mCandidateList Component[2m > [22mshould show error message when error occurs[39m
+[31m     ΓåÆ Unable to find an element with the text: /No candidates found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_candidateList_528603"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_528603"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mCandidates ([0m
+          [0m0[0m
+          [0m)[0m
+        [36m</h2>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_searchBar_528603"[31m
+      [36m>[31m
+        [36m<select[31m
+          [33maria-label[31m=[32m"Search type selector"[31m
+          [33mclass[31m=[32m"_searchSelect_528603"[31m
+        [36m>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"all"[31m
+          [36m>[31m
+            [0mAll Candidates[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"name"[31m
+          [36m>[31m
+            [0mSearch by Name[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"skill"[31m
+          [36m>[31m
+            [0mSearch by Skill[0m
+          [36m</option>[31m
+        [36m</select>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_searchButton_528603"[31m
+          [33mdisabled[31m=[32m""[31m
+        [36m>[31m
+          [0mSearching...[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_528603"[31m
+      [36m>[31m
+        [0mLoading candidates...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/CandidateList/CandidateList.test.tsx[2m > [22mCandidateList Component[2m > [22mshould display candidate details[39m
+[31m     ΓåÆ Unable to find an element with the text: /John Doe/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_candidateList_528603"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_528603"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mCandidates ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h2>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_searchBar_528603"[31m
+      [36m>[31m
+        [36m<select[31m
+          [33maria-label[31m=[32m"Search type selector"[31m
+          [33mclass[31m=[32m"_searchSelect_528603"[31m
+        [36m>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"all"[31m
+          [36m>[31m
+            [0mAll Candidates[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"name"[31m
+          [36m>[31m
+            [0mSearch by Name[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"skill"[31m
+          [36m>[31m
+            [0mSearch by Skill[0m
+          [36m</option>[31m
+        [36m</select>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_searchButton_528603"[31m
+          [33mdisabled[31m=[32m""[31m
+        [36m>[31m
+          [0mSearching...[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_528603"[31m
+      [36m>[31m
+        [0mLoading candidates...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/CandidateList/CandidateList.test.tsx[2m > [22mCandidateList Component[2m > [22mshould show empty state when no candidates[39m
+[31m     ΓåÆ Unable to find an element with the text: /No candidates found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_candidateList_528603"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_528603"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mCandidates ([0m
+          [0m0[0m
+          [0m)[0m
+        [36m</h2>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_searchBar_528603"[31m
+      [36m>[31m
+        [36m<select[31m
+          [33maria-label[31m=[32m"Search type selector"[31m
+          [33mclass[31m=[32m"_searchSelect_528603"[31m
+        [36m>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"all"[31m
+          [36m>[31m
+            [0mAll Candidates[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"name"[31m
+          [36m>[31m
+            [0mSearch by Name[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"skill"[31m
+          [36m>[31m
+            [0mSearch by Skill[0m
+          [36m</option>[31m
+        [36m</select>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_searchButton_528603"[31m
+          [33mdisabled[31m=[32m""[31m
+        [36m>[31m
+          [0mSearching...[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_528603"[31m
+      [36m>[31m
+        [0mLoading candidates...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/CandidateList/CandidateList.test.tsx[2m > [22mCandidateList Component[2m > [22mshould render candidate skills[39m
+[31m     ΓåÆ Unable to find an element with the text: /Java, Spring Boot, React, PostgreSQL/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_candidateList_528603"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_528603"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mCandidates ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h2>[31m
+      [36m</div>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_searchBar_528603"[31m
+      [36m>[31m
+        [36m<select[31m
+          [33maria-label[31m=[32m"Search type selector"[31m
+          [33mclass[31m=[32m"_searchSelect_528603"[31m
+        [36m>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"all"[31m
+          [36m>[31m
+            [0mAll Candidates[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"name"[31m
+          [36m>[31m
+            [0mSearch by Name[0m
+          [36m</option>[31m
+          [36m<option[31m
+            [33mvalue[31m=[32m"skill"[31m
+          [36m>[31m
+            [0mSearch by Skill[0m
+          [36m</option>[31m
+        [36m</select>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_searchButton_528603"[31m
+          [33mdisabled[31m=[32m""[31m
+        [36m>[31m
+          [0mSearching...[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_528603"[31m
+      [36m>[31m
+        [0mLoading candidates...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+stderr | src/pages/CandidateList/CandidateList.test.tsx > CandidateList Component > should render candidate list component
+ΓÜá∩╕Å React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+ΓÜá∩╕Å React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ [32mΓ£ô[39m src/pages/CandidateMatching/CandidateMatching.test.tsx [2m ([22m[2m8 tests[22m[2m)[22m[90m 176[2mms[22m[39m
+stderr | src/pages/CandidateMatching/CandidateMatching.test.tsx > CandidateMatching Component > should render candidate matching component
+ΓÜá∩╕Å React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+ΓÜá∩╕Å React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+stderr | src/pages/FileUpload/FileUpload.test.tsx > FileUpload Component > should render file upload component
+ΓÜá∩╕Å React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+ΓÜá∩╕Å React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+ [33mΓ¥»[39m src/pages/JobRequirements/JobRequirements.test.tsx [2m ([22m[2m8 tests[22m [2m|[22m [31m5 failed[39m[2m)[22m[90m 206[2mms[22m[39m
+[31m   [33mΓ¥»[31m src/pages/JobRequirements/JobRequirements.test.tsx[2m > [22mJobRequirements Component[2m > [22mshould display job listings when loaded[39m
+[31m     ΓåÆ Unable to find an element with the text: /Senior Java Developer/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_jobRequirements_8f7fe4"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_8f7fe4"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mJob Requirements ([0m
+          [0m2[0m
+          [0m)[0m
+        [36m</h2>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_createButton_8f7fe4"[31m
+        [36m>[31m
+          [0m+ Create New Job[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_8f7fe4"[31m
+      [36m>[31m
+        [0mLoading jobs...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/JobRequirements/JobRequirements.test.tsx[2m > [22mJobRequirements Component[2m > [22mshould show error message when error occurs[39m
+[31m     ΓåÆ Unable to find an element with the text: /No job requirements found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_jobRequirements_8f7fe4"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_8f7fe4"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mJob Requirements ([0m
+          [0m0[0m
+          [0m)[0m
+        [36m</h2>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_createButton_8f7fe4"[31m
+        [36m>[31m
+          [0m+ Create New Job[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_8f7fe4"[31m
+      [36m>[31m
+        [0mLoading jobs...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/JobRequirements/JobRequirements.test.tsx[2m > [22mJobRequirements Component[2m > [22mshould display job details[39m
+[31m     ΓåÆ Unable to find an element with the text: /Senior Java Developer/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_jobRequirements_8f7fe4"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_8f7fe4"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mJob Requirements ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h2>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_createButton_8f7fe4"[31m
+        [36m>[31m
+          [0m+ Create New Job[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_8f7fe4"[31m
+      [36m>[31m
+        [0mLoading jobs...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/JobRequirements/JobRequirements.test.tsx[2m > [22mJobRequirements Component[2m > [22mshould show empty state when no jobs[39m
+[31m     ΓåÆ Unable to find an element with the text: /No job requirements found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_jobRequirements_8f7fe4"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_8f7fe4"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mJob Requirements ([0m
+          [0m0[0m
+          [0m)[0m
+        [36m</h2>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_createButton_8f7fe4"[31m
+        [36m>[31m
+          [0m+ Create New Job[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_8f7fe4"[31m
+      [36m>[31m
+        [0mLoading jobs...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+[31m   [33mΓ¥»[31m src/pages/JobRequirements/JobRequirements.test.tsx[2m > [22mJobRequirements Component[2m > [22mshould display required skills for job[39m
+stderr | src/pages/JobRequirements/JobRequirements.test.tsx > JobRequirements Component > should render job requirements component
+ΓÜá∩╕Å React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+ΓÜá∩╕Å React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+[31m     ΓåÆ Unable to find an element with the text: /Java, Spring Boot, Microservices/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<div[31m
+      [33mclass[31m=[32m"_jobRequirements_8f7fe4"[31m
+    [36m>[31m
+      [36m<div[31m
+        [33mclass[31m=[32m"_header_8f7fe4"[31m
+      [36m>[31m
+        [36m<h2>[31m
+          [0mJob Requirements ([0m
+          [0m1[0m
+          [0m)[0m
+        [36m</h2>[31m
+        [36m<button[31m
+          [33mclass[31m=[32m"_createButton_8f7fe4"[31m
+        [36m>[31m
+          [0m+ Create New Job[0m
+        [36m</button>[31m
+      [36m</div>[31m
+      [36m<p[31m
+        [33mclass[31m=[32m"_loading_8f7fe4"[31m
+      [36m>[31m
+        [0mLoading jobs...[0m
+      [36m</p>[31m
+    [36m</div>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+ [32mΓ£ô[39m src/pages/FileUpload/FileUpload.test.tsx [2m ([22m[2m7 tests[22m[2m)[22m[33m 312[2mms[22m[39m
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ» Failed Tests 10 ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+
+ FAIL  src/pages/CandidateList/CandidateList.test.tsx > CandidateList Component > should display candidates when loaded
+TestingLibraryElementError: Unable to find an element with the text: /John Doe/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_candidateList_528603"
+    >
+      <div
+        class="_header_528603"
+      >
+        <h2>
+          Candidates (
+          2
+          )
+        </h2>
+      </div>
+      <div
+        class="_searchBar_528603"
+      >
+        <select
+          aria-label="Search type selector"
+          class="_searchSelect_528603"
+        >
+          <option
+            value="all"
+          >
+            All Candidates
+          </option>
+          <option
+            value="name"
+          >
+            Search by Name
+          </option>
+          <option
+            value="skill"
+          >
+            Search by Skill
+          </option>
+        </select>
+        <button
+          class="_searchButton_528603"
+          disabled=""
+        >
+          Searching...
+        </button>
+      </div>
+      <p
+        class="_loading_528603"
+      >
+        Loading candidates...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/CandidateList/CandidateList.test.tsx:25:19
+     23|     
+     24|     // Check if candidate names are displayed
+     25|     expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
+       |                   ^
+     26|     expect(screen.getByText(/Jane Smith/i)).toBeInTheDocument();
+     27|   });
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1/10]ΓÄ»
+
+ FAIL  src/pages/CandidateList/CandidateList.test.tsx > CandidateList Component > should show error message when error occurs
+TestingLibraryElementError: Unable to find an element with the text: /No candidates found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_candidateList_528603"
+    >
+      <div
+        class="_header_528603"
+      >
+        <h2>
+          Candidates (
+          0
+          )
+        </h2>
+      </div>
+      <div
+        class="_searchBar_528603"
+      >
+        <select
+          aria-label="Search type selector"
+          class="_searchSelect_528603"
+        >
+          <option
+            value="all"
+          >
+            All Candidates
+          </option>
+          <option
+            value="name"
+          >
+            Search by Name
+          </option>
+          <option
+            value="skill"
+          >
+            Search by Skill
+          </option>
+        </select>
+        <button
+          class="_searchButton_528603"
+          disabled=""
+        >
+          Searching...
+        </button>
+      </div>
+      <p
+        class="_loading_528603"
+      >
+        Loading candidates...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/CandidateList/CandidateList.test.tsx:55:19
+     53|     
+     54|     // Component doesn't show error message, just shows empty state
+     55|     expect(screen.getByText(/No candidates found/i)).toBeInTheDocumentΓÇª
+       |                   ^
+     56|   });
+     57| 
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[2/10]ΓÄ»
+
+ FAIL  src/pages/CandidateList/CandidateList.test.tsx > CandidateList Component > should display candidate details
+TestingLibraryElementError: Unable to find an element with the text: /John Doe/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_candidateList_528603"
+    >
+      <div
+        class="_header_528603"
+      >
+        <h2>
+          Candidates (
+          1
+          )
+        </h2>
+      </div>
+      <div
+        class="_searchBar_528603"
+      >
+        <select
+          aria-label="Search type selector"
+          class="_searchSelect_528603"
+        >
+          <option
+            value="all"
+          >
+            All Candidates
+          </option>
+          <option
+            value="name"
+          >
+            Search by Name
+          </option>
+          <option
+            value="skill"
+          >
+            Search by Skill
+          </option>
+        </select>
+        <button
+          class="_searchButton_528603"
+          disabled=""
+        >
+          Searching...
+        </button>
+      </div>
+      <p
+        class="_loading_528603"
+      >
+        Loading candidates...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/CandidateList/CandidateList.test.tsx:69:19
+     67|     render(<CandidateList />, { preloadedState: initialState });
+     68|     
+     69|     expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
+       |                   ^
+     70|     expect(screen.getByText(/john\.doe@example\.com/i)).toBeInTheDocumΓÇª
+     71|     expect(screen.getByText(/8 yrs/i)).toBeInTheDocument();
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[3/10]ΓÄ»
+
+ FAIL  src/pages/CandidateList/CandidateList.test.tsx > CandidateList Component > should show empty state when no candidates
+TestingLibraryElementError: Unable to find an element with the text: /No candidates found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_candidateList_528603"
+    >
+      <div
+        class="_header_528603"
+      >
+        <h2>
+          Candidates (
+          0
+          )
+        </h2>
+      </div>
+      <div
+        class="_searchBar_528603"
+      >
+        <select
+          aria-label="Search type selector"
+          class="_searchSelect_528603"
+        >
+          <option
+            value="all"
+          >
+            All Candidates
+          </option>
+          <option
+            value="name"
+          >
+            Search by Name
+          </option>
+          <option
+            value="skill"
+          >
+            Search by Skill
+          </option>
+        </select>
+        <button
+          class="_searchButton_528603"
+          disabled=""
+        >
+          Searching...
+        </button>
+      </div>
+      <p
+        class="_loading_528603"
+      >
+        Loading candidates...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/CandidateList/CandidateList.test.tsx:85:19
+     83|     render(<CandidateList />, { preloadedState: initialState });
+     84|     
+     85|     expect(screen.getByText(/No candidates found/i)).toBeInTheDocumentΓÇª
+       |                   ^
+     86|   });
+     87| 
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[4/10]ΓÄ»
+
+ FAIL  src/pages/CandidateList/CandidateList.test.tsx > CandidateList Component > should render candidate skills
+TestingLibraryElementError: Unable to find an element with the text: /Java, Spring Boot, React, PostgreSQL/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_candidateList_528603"
+    >
+      <div
+        class="_header_528603"
+      >
+        <h2>
+          Candidates (
+          1
+          )
+        </h2>
+      </div>
+      <div
+        class="_searchBar_528603"
+      >
+        <select
+          aria-label="Search type selector"
+          class="_searchSelect_528603"
+        >
+          <option
+            value="all"
+          >
+            All Candidates
+          </option>
+          <option
+            value="name"
+          >
+            Search by Name
+          </option>
+          <option
+            value="skill"
+          >
+            Search by Skill
+          </option>
+        </select>
+        <button
+          class="_searchButton_528603"
+          disabled=""
+        >
+          Searching...
+        </button>
+      </div>
+      <p
+        class="_loading_528603"
+      >
+        Loading candidates...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/CandidateList/CandidateList.test.tsx:100:19
+     98|     
+     99|     // mockCandidates[0] has skills: 'Java, Spring Boot, React, PostgrΓÇª
+    100|     expect(screen.getByText(/Java, Spring Boot, React, PostgreSQL/i)).ΓÇª
+       |                   ^
+    101|   });
+    102| });
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[5/10]ΓÄ»
+
+ FAIL  src/pages/JobRequirements/JobRequirements.test.tsx > JobRequirements Component > should display job listings when loaded
+TestingLibraryElementError: Unable to find an element with the text: /Senior Java Developer/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_jobRequirements_8f7fe4"
+    >
+      <div
+        class="_header_8f7fe4"
+      >
+        <h2>
+          Job Requirements (
+          2
+          )
+        </h2>
+        <button
+          class="_createButton_8f7fe4"
+        >
+          + Create New Job
+        </button>
+      </div>
+      <p
+        class="_loading_8f7fe4"
+      >
+        Loading jobs...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/JobRequirements/JobRequirements.test.tsx:25:19
+     23|     
+     24|     // mockJobRequirements has 'Senior Java Developer' and 'Python BacΓÇª
+     25|     expect(screen.getByText(/Senior Java Developer/i)).toBeInTheDocumeΓÇª
+       |                   ^
+     26|     expect(screen.getByText(/Python Backend Engineer/i)).toBeInTheDocuΓÇª
+     27|   });
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[6/10]ΓÄ»
+
+ FAIL  src/pages/JobRequirements/JobRequirements.test.tsx > JobRequirements Component > should show error message when error occurs
+TestingLibraryElementError: Unable to find an element with the text: /No job requirements found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_jobRequirements_8f7fe4"
+    >
+      <div
+        class="_header_8f7fe4"
+      >
+        <h2>
+          Job Requirements (
+          0
+          )
+        </h2>
+        <button
+          class="_createButton_8f7fe4"
+        >
+          + Create New Job
+        </button>
+      </div>
+      <p
+        class="_loading_8f7fe4"
+      >
+        Loading jobs...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/JobRequirements/JobRequirements.test.tsx:55:19
+     53|     
+     54|     // Component doesn't show error message, just shows empty state
+     55|     expect(screen.getByText(/No job requirements found/i)).toBeInTheDoΓÇª
+       |                   ^
+     56|   });
+     57| 
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[7/10]ΓÄ»
+
+ FAIL  src/pages/JobRequirements/JobRequirements.test.tsx > JobRequirements Component > should display job details
+TestingLibraryElementError: Unable to find an element with the text: /Senior Java Developer/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_jobRequirements_8f7fe4"
+    >
+      <div
+        class="_header_8f7fe4"
+      >
+        <h2>
+          Job Requirements (
+          1
+          )
+        </h2>
+        <button
+          class="_createButton_8f7fe4"
+        >
+          + Create New Job
+        </button>
+      </div>
+      <p
+        class="_loading_8f7fe4"
+      >
+        Loading jobs...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/JobRequirements/JobRequirements.test.tsx:69:19
+     67|     render(<JobRequirements />, { preloadedState: initialState });
+     68|     
+     69|     expect(screen.getByText(/Senior Java Developer/i)).toBeInTheDocumeΓÇª
+       |                   ^
+     70|     // Component shows "5 - 10 years" (with spaces)
+     71|     expect(screen.getByText(/5 - 10 years/i)).toBeInTheDocument();
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[8/10]ΓÄ»
+
+ FAIL  src/pages/JobRequirements/JobRequirements.test.tsx > JobRequirements Component > should show empty state when no jobs
+TestingLibraryElementError: Unable to find an element with the text: /No job requirements found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_jobRequirements_8f7fe4"
+    >
+      <div
+        class="_header_8f7fe4"
+      >
+        <h2>
+          Job Requirements (
+          0
+          )
+        </h2>
+        <button
+          class="_createButton_8f7fe4"
+        >
+          + Create New Job
+        </button>
+      </div>
+      <p
+        class="_loading_8f7fe4"
+      >
+        Loading jobs...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/JobRequirements/JobRequirements.test.tsx:85:19
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m9 passed[39m[22m[90m (11)[39m
+     83|     render(<JobRequirements />, { preloadedState: initialState });
+     84|     
+     85|     expect(screen.getByText(/No job requirements found/i)).toBeInTheDoΓÇª
+       |                   ^
+     86|   });
+     87| 
+[2m      Tests [22m [1m[31m10 failed[39m[22m[2m | [22m[1m[32m79 passed[39m[22m[90m (89)[39m
+[2m   Start at [22m 09:00:54
+[2m   Duration [22m 32.22s[2m (transform 4.25s, setup 94.91s, collect 37.05s, tests 1.43s, environment 175.64s, prepare 15.71s)[22m
+
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[9/10]ΓÄ»
+
+ FAIL  src/pages/JobRequirements/JobRequirements.test.tsx > JobRequirements Component > should display required skills for job
+TestingLibraryElementError: Unable to find an element with the text: /Java, Spring Boot, Microservices/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="_jobRequirements_8f7fe4"
+    >
+      <div
+        class="_header_8f7fe4"
+      >
+        <h2>
+          Job Requirements (
+          1
+          )
+        </h2>
+        <button
+          class="_createButton_8f7fe4"
+        >
+          + Create New Job
+        </button>
+      </div>
+      <p
+        class="_loading_8f7fe4"
+      >
+        Loading jobs...
+      </p>
+    </div>
+  </div>
+</body>
+ Γ¥» Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ Γ¥» node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ Γ¥» src/pages/JobRequirements/JobRequirements.test.tsx:100:19
+     98|     
+     99|     // mockJobRequirements[0] has requiredSkills: 'Java, Spring Boot, ΓÇª
+    100|     expect(screen.getByText(/Java, Spring Boot, Microservices/i)).toBeΓÇª
+       |                   ^
+    101|   });
+    102| 
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[10/10]ΓÄ»
+
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

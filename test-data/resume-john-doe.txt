@@ -1,0 +1,60 @@
+JOHN DOE
+Senior Software Engineer
+Email: john.doe@email.com | Phone: (555) 123-4567 | Location: San Francisco, CA
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Highly skilled Senior Software Engineer with 8 years of experience in designing and developing scalable backend systems using Java, Spring Boot, and microservices architecture. Strong expertise in cloud platforms (AWS), containerization (Docker, Kubernetes), and DevOps practices. Proven track record of delivering high-quality software solutions in fast-paced agile environments.
+
+TECHNICAL SKILLS
+- Programming Languages: Java, Python, JavaScript, TypeScript
+- Frameworks: Spring Boot, Spring Cloud, Hibernate, JPA
+- Architecture: Microservices, RESTful APIs, Event-Driven Architecture
+- Cloud Platforms: AWS (EC2, S3, Lambda, RDS, ECS), Azure
+- Containers & Orchestration: Docker, Kubernetes, Docker Compose
+- Databases: PostgreSQL, MySQL, MongoDB, Redis
+- Message Queues: Kafka, RabbitMQ, AWS SQS
+- CI/CD: Jenkins, GitLab CI, GitHub Actions
+- Tools: Git, Maven, Gradle, IntelliJ IDEA
+- Methodologies: Agile, Scrum, TDD, CI/CD
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | TechCorp Solutions | San Francisco, CA | Jan 2020 - Present
+- Designed and implemented microservices architecture using Spring Boot, reducing system latency by 40%
+- Led migration of monolithic application to cloud-native architecture on AWS, improving scalability
+- Implemented event-driven architecture using Kafka for real-time data processing
+- Developed RESTful APIs serving 10M+ requests per day with 99.9% uptime
+- Mentored junior developers and conducted code reviews ensuring high code quality
+- Implemented CI/CD pipelines using Jenkins and Docker, reducing deployment time by 60%
+
+Software Engineer | Digital Innovations Inc | San Francisco, CA | Jun 2017 - Dec 2019
+- Developed backend services using Java and Spring Framework for e-commerce platform
+- Implemented database optimization strategies, improving query performance by 50%
+- Integrated third-party APIs including payment gateways and shipping providers
+- Participated in agile development process with 2-week sprints
+- Wrote comprehensive unit and integration tests achieving 85% code coverage
+
+Junior Software Engineer | StartupHub | San Jose, CA | Jul 2015 - May 2017
+- Developed and maintained Java applications using Spring MVC
+- Collaborated with frontend team to build RESTful APIs
+- Participated in daily stand-ups and sprint planning meetings
+- Fixed bugs and implemented feature enhancements
+
+EDUCATION
+Bachelor of Science in Computer Science | Stanford University | 2011 - 2015
+GPA: 3.7/4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- Oracle Certified Professional, Java SE 11 Developer
+- Certified Kubernetes Application Developer (CKAD)
+
+PROJECTS
+E-Commerce Microservices Platform
+- Built scalable microservices platform handling 1M+ daily transactions
+- Technologies: Java, Spring Boot, Kubernetes, PostgreSQL, Redis, Kafka
+
+Real-Time Analytics Dashboard
+- Developed real-time analytics system processing streaming data
+- Technologies: Java, Kafka, Spring Boot, React, MongoDB

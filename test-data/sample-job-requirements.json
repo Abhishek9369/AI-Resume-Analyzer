@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Senior Java Developer",
+    "description": "We are looking for an experienced Java developer to join our backend team. The ideal candidate should have strong experience with Spring Boot, microservices, and cloud platforms.",
+    "skills": ["Java", "Spring Boot", "Microservices", "AWS", "Docker", "Kubernetes"],
+    "minExperience": 5,
+    "maxExperience": 10,
+    "location": "San Francisco, CA",
+    "employmentType": "FULL_TIME",
+    "priority": "HIGH"
+  },
+  {
+    "title": "Full Stack Developer",
+    "description": "Join our product team as a Full Stack Developer. You will work on both frontend (React) and backend (Node.js) development.",
+    "skills": ["React", "Node.js", "TypeScript", "PostgreSQL", "GraphQL", "Redux"],
+    "minExperience": 3,
+    "maxExperience": 7,
+    "location": "Remote",
+    "employmentType": "FULL_TIME",
+    "priority": "MEDIUM"
+  },
+  {
+    "title": "DevOps Engineer",
+    "description": "We need a DevOps engineer to help build and maintain our CI/CD infrastructure and cloud environments.",
+    "skills": ["AWS", "Terraform", "Jenkins", "Docker", "Kubernetes", "Python"],
+    "minExperience": 4,
+    "maxExperience": 8,
+    "location": "New York, NY",
+    "employmentType": "FULL_TIME",
+    "priority": "HIGH"
+  }
+]

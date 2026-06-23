@@ -1,0 +1,73 @@
+# Docker ignore file for Resume Analyzer
+
+# Target and build directories
+target/
+**/target/
+build/
+dist/
+
+# Node modules and frontend build artifacts
+**/node_modules/
+**/node/
+src/main/frontend/build/
+src/main/frontend/dist/
+src/main/frontend/.vite/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (included but not needed in image)
+*.md
+docs/
+
+# Docker files (don't copy Docker files into image)
+docker/
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Environment files (use docker-compose env instead)
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Test files
+**/test/
+**/*.test.js
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.js
+**/*.spec.ts
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Package manager lock files (we'll regenerate)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

@@ -1,0 +1,104 @@
+ai:
+  prompts:
+    resume-analysis:
+      system: >
+        You are an expert HR analyst with deep knowledge of technical skills, career progression,
+        and resume evaluation. Extract candidate information from resumes with high accuracy and
+        return a structured JSON response only — no surrounding text, no markdown code blocks.
+      user-template: |
+        Analyze the following resume and extract key information.
+
+        Resume Content:
+        {resumeContent}
+
+        Please provide a JSON response with the following structure:
+        {
+          "name": "Candidate's full name",
+          "email": "Email address",
+          "mobile": "Phone number",
+          "experienceSummary": "Brief summary of work experience (2-3 sentences)",
+          "skills": "MUST be a plain string with comma-separated values e.g. Java, Spring Boot, AWS",
+          "domainKnowledge": "MUST be a plain string with comma-separated domains e.g. Fintech, Cloud",
+          "academicBackground": "Education qualifications as a plain string summary",
+          "yearsOfExperience": 0,
+          "confidenceScore": 0.0
+        }
+
+        IMPORTANT RULES:
+        - skills, domainKnowledge, and academicBackground MUST be plain strings, NOT JSON arrays.
+        - yearsOfExperience must be a numeric value (integer), calculated from employment history.
+        - confidenceScore must be a decimal between 0.0 and 1.0, reflecting extraction accuracy.
+        - If a field cannot be extracted, use null for strings or 0 for numbers.
+        - Respond ONLY with valid JSON — no additional text, no markdown, no code fences.
+
+    source-selection:
+      system: >
+        You are an expert recruitment analyst deciding which external data sources to query
+        in order to improve candidate-to-job matching accuracy.
+        Return only valid JSON — no surrounding text, no markdown code blocks.
+      user-template: |
+        Given the following candidate profile and job requirement, decide which external
+        data sources would most improve matching accuracy.
+
+        CANDIDATE:
+        - Skills: {candidateSkills}
+        - Experience Summary: {experienceSummary}
+        - Years of Experience: {yearsOfExperience}
+
+        JOB REQUIREMENT:
+        - Title: {jobTitle}
+        - Required Skills: {requiredSkills}
+        - Description: {jobDescription}
+
+        Available sources and when to use them:
+        - GITHUB: for roles requiring coding, open-source contributions, or technical depth
+        - TWITTER: for roles valuing community presence, developer advocacy, or social influence
+        - LINKEDIN: for professional work history, endorsements, and career progression
+        - INTERNET_SEARCH: always include — synthesises candidate web presence
+
+        Return JSON only, no other text:
+        {"sources": ["GITHUB", "INTERNET_SEARCH"], "reasoning": "brief explanation"}
+
+    candidate-matching:
+      system: >
+        You are an expert recruitment analyst specialising in candidate-to-job matching.
+        Evaluate candidates objectively against job requirements using skills, experience, education,
+        and domain knowledge. Return a structured JSON response only — no surrounding text,
+        no markdown code blocks.
+      user-template: |
+        Match the following candidate against the job requirement.
+
+        CANDIDATE PROFILE:
+        - Experience Summary: {experienceSummary}
+        - Skills: {skills}
+        - Domain Knowledge: {domainKnowledge}
+        - Academic Background: {academicBackground}
+        - Years of Experience: {yearsOfExperience}
+        {enrichedSection}
+        JOB REQUIREMENT:
+        - Title: {jobTitle}
+        - Description: {jobDescription}
+        - Required Skills: {requiredSkills}
+        - Required Education: {requiredEducation}
+        - Domain Requirements: {domainRequirements}
+        - Experience Range: {minExperience} - {maxExperience} years
+
+        Provide a detailed matching analysis in JSON format:
+        {
+          "matchScore": 0,
+          "skillsScore": 0,
+          "experienceScore": 0,
+          "educationScore": 0,
+          "domainScore": 0,
+          "explanation": "Overall match explanation",
+          "strengths": "Key strengths of candidate for this role",
+          "gaps": "Missing qualifications or skills",
+          "recommendation": "Strong Match|Good Match|Partial Match|No Match"
+        }
+
+        SCORING RULES:
+        - All scores must be integers between 0 and 100.
+        - matchScore is the weighted average: skills(40%) + experience(25%) + education(20%) + domain(15%).
+        - recommendation must be exactly one of: Strong Match, Good Match, Partial Match, No Match.
+        - If external profile data is provided in the enrichedSection, incorporate it to improve accuracy.
+        - Respond ONLY with valid JSON — no additional text, no markdown, no code fences.
