@@ -3,23 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.2</version>
         <relativePath/>
     </parent>
-    
+
     <groupId>io.subbu.ai.firedrill</groupId>
     <artifactId>resume-analyzer</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    
+
     <name>Resume Analyzer</name>
     <description>AI-powered resume analysis and candidate matching system</description>
-    
+
     <properties>
         <java.version>21</java.version>
         <maven.compiler.source>21</maven.compiler.source>
@@ -42,80 +43,80 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
     <dependencies>
         <!-- Spring Boot Starters -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-graphql</artifactId>
         </dependency>
-        
+
         <!-- GraphQL Extended Scalars -->
         <dependency>
             <groupId>com.graphql-java</groupId>
             <artifactId>graphql-java-extended-scalars</artifactId>
             <version>21.0</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        
+
         <!-- PostgreSQL Driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
-        
+
         <!-- PgVector for Vector DB -->
         <dependency>
             <groupId>com.pgvector</groupId>
             <artifactId>pgvector</artifactId>
             <version>0.1.4</version>
         </dependency>
-        
+
         <!-- Spring AI (version managed by spring-ai-bom) -->
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
         </dependency>
-        
+
         <!-- Apache POI for Word Documents -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>5.2.5</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.5</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-scratchpad</artifactId>
             <version>5.2.5</version>
         </dependency>
-        
+
         <!-- Apache PDFBox for PDF -->
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
@@ -128,7 +129,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        
+
         <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -136,20 +137,20 @@
             <version>1.18.36</version>
             <optional>true</optional>
         </dependency>
-        
+
         <!-- Commons IO for file operations -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.15.1</version>
         </dependency>
-        
+
         <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        
+
         <!-- JWT -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
@@ -168,7 +169,7 @@
             <version>0.12.5</version>
             <scope>runtime</scope>
         </dependency>
-        
+
         <!-- Hypersistence Utils for JSONB support -->
         <dependency>
             <groupId>io.hypersistence</groupId>
@@ -188,19 +189,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.graphql</groupId>
             <artifactId>spring-graphql-test</artifactId>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-        
+
         <!-- Testcontainers for integration testing -->
         <dependency>
             <groupId>org.testcontainers</groupId>
@@ -208,14 +209,14 @@
             <version>1.19.3</version>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
             <version>1.19.3</version>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -223,7 +224,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -257,8 +258,8 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
-            
-            <!-- Maven Surefire Plugin with ByteBuddy experimental flag for Java 25 -->
+
+            <!-- Maven Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -267,7 +268,7 @@
                     <argLine>-Dnet.bytebuddy.experimental=true</argLine>
                 </configuration>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -280,7 +281,7 @@
                     </excludes>
                 </configuration>
             </plugin>
-            
+
             <!-- Frontend Maven Plugin -->
             <plugin>
                 <groupId>com.github.eirslett</groupId>
@@ -291,7 +292,6 @@
                     <installDirectory>target</installDirectory>
                 </configuration>
                 <executions>
-                    <!-- Install Node and Yarn -->
                     <execution>
                         <id>install node and yarn</id>
                         <goals>
@@ -302,8 +302,7 @@
                             <yarnVersion>${yarn.version}</yarnVersion>
                         </configuration>
                     </execution>
-                    
-                    <!-- Install dependencies -->
+
                     <execution>
                         <id>yarn install</id>
                         <goals>
@@ -313,8 +312,7 @@
                             <arguments>install</arguments>
                         </configuration>
                     </execution>
-                    
-                    <!-- Build frontend -->
+
                     <execution>
                         <id>yarn build</id>
                         <goals>
@@ -326,7 +324,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <!-- Copy frontend build to static resources -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -350,5 +348,24 @@
             </plugin>
         </plugins>
     </build>
-    
+
+    <!-- Spring Milestones repository — required for Spring AI M6 -->
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots><enabled>false</enabled></snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
 </project>
