@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: resume-analyzer
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  graphql:
+    graphiql:
+      enabled: true
+    path: /graphql
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+  ai:
+    openai:
+      base-url: ${LLM_BASE_URL:https://api.groq.com/openai/v1}
+      api-key: ${LLM_API_KEY}
+      chat:
+        options:
+          model: ${LLM_CHAT_MODEL:llama3-8b-8192}
+          temperature: 0.7
+          max-tokens: 2000
+      embedding:
+        base-url: ${EMBEDDING_BASE_URL:https://api.openai.com}
+        api-key: ${EMBEDDING_API_KEY}
+        options:
+          model: ${EMBEDDING_MODEL:text-embedding-3-small}
+
+server:
+  port: ${PORT:8080}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration: ${JWT_EXPIRATION:86400000}
+  enrichment:
+    tavily:
+      api-key: ${TAVILY_API_KEY:}
+    staleness-ttl: ${ENRICHMENT_STALENESS_TTL:7}
+    source-selection: ${ENRICHMENT_SOURCE_SELECTION:false}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
